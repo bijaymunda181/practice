@@ -4,6 +4,6 @@ resource "aws_instance" "main" {
 
   user_data = file("${path.module}/install.sh")
   tags = {
-    Nmae = "Nginx-Server"
+    Name = "Nginx-Server"
   }
 }
