@@ -8,3 +8,6 @@ resource "aws_instance" "New" {
 }
 
 variable "instance_type" {}
+
+# you can pass the variable using CLI when you run the command, terraform plan or terraform apply
+# terraform plan -var="instance_type=t3.micro" or if you just run the command terraform plan it will ask for instance type.
