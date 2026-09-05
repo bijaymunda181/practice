@@ -6,3 +6,5 @@ resource "aws_instance" "New" {
     Name = "manual-var"
   }
 }
+
+variable "instance_type" {}
