@@ -15,6 +15,6 @@ resource "aws_instance" "New" {
   vpc_security_group_ids = [data.aws_security_group.launch-wizard-1.id]
 
   tags = {
-    Name = "New-server"
+    Name = "tfvars-server"
   }
 }
