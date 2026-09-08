@@ -1,3 +1,3 @@
-variable "latest" {
-  default = true
+variable "env" {
+  default = prod
 }
