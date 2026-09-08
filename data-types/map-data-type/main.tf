@@ -4,6 +4,10 @@ resource "aws_instance" "map-data-type" {
   instance_type = var.instance_type["dev"]
   availability_zone = var.availability_zone[0]
 
+  tags = {
+    Name = "server-${count.index+1}-dev"
+  }
+
  }
 
 
