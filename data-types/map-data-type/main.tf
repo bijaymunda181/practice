@@ -5,7 +5,7 @@ resource "aws_instance" "map-data-type" {
   availability_zone = var.availability_zone[0]
 
   tags = {
-    Name = "server-${count.index+1}-dev"
+    Name = "dev-server${count.index+1}"
   }
 
  }
