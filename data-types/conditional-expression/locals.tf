@@ -1,6 +1,5 @@
 locals {
-  common_tags = {
-    owner = "ABC"
-    Name  = "EC2"
-  }
+  environment = "dev"
+  project     = "myapp"
+  instance_name = "${local.project}-${local.environment}"
 }
