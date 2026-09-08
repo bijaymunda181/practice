@@ -1,0 +1,3 @@
+variable "latest" {
+  default = true
+}
