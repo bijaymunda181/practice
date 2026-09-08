@@ -5,5 +5,5 @@ resource "aws_instance" "ec2" {
 }
 
 output "aws_instance" {
-  value = aws_instance.ec2
+  value = aws_instance.ec2.ami
 }
