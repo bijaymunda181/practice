@@ -7,5 +7,5 @@ variable "instance_type" {
 }
 
 variable "tags" {
-  Name = ["server1", "server2", "server3"]
+  default = ["server1", "server2", "server3"]
 }
