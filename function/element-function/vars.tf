@@ -1,7 +1,7 @@
 variable "instance_type" {
   default = [
-    "t2.large",
-    "t2.small",
-    "t2.micro"
+    "t3.large",
+    "t3.small",
+    "t3.micro"
   ]
 }
