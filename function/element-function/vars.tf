@@ -5,3 +5,7 @@ variable "instance_type" {
     "t3.micro"
   ]
 }
+
+variable "tags" {
+  Name = ["server1", "server2", "server3"]
+}
