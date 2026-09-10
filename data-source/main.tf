@@ -1,4 +1,4 @@
 resource "aws_instance" "latest-ami" {
-  ami = var.ami
+  ami = data.aws_ami.latest-ami.id
   instance_type = var.instance_type
 }
