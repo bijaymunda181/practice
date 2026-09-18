@@ -17,4 +17,3 @@ resource "aws_instance" "New" {
   user_data = file("${path.module}/install.sh")
   tags = var.tags
   }
-}
