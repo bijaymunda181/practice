@@ -15,5 +15,7 @@ resource "aws_instance" "New" {
   instance_type = var.instance_type
   vpc_security_group_ids = [data.aws_security_group.launch-wizard-1.id]
   user_data = file("${path.module}/install.sh")
-  tags = var.tags
+  tags = {
+    PatchGroup = "sit-1"
+  }
   }
