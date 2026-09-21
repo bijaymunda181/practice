@@ -16,7 +16,7 @@ resource "aws_vpc_security_group_ingress_rule" "allow_tls_ipv4" {
   to_port           = 443
 }
 
-resource "aws_vpc_security_group_ingress_rule" "allow_tls_ipv4" {
+resource "aws_vpc_security_group_ingress_rule" "allow_port_22" {
   security_group_id = aws_security_group.allow_tls.id
   cidr_ipv4         = "172.31.0.0/16"
   from_port         = 22
