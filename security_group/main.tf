@@ -3,6 +3,9 @@ resource "aws_instance" "my_instance" {
   ami = "ami-00adafae70b8029d8"
   instance_type = "t3.small"
   vpc_security_group_ids = [aws_security_group.dynamic_sg.id]
+  tags = {
+    Name = "My_instance"
+  }
 }
 
 resource "aws_security_group" "dynamic_sg" {
