@@ -5,7 +5,7 @@ resource "aws_iam_user" "lb" {
 }
 
 output "arn" {
-  value = zmap([aws_iam_user.lb[*].name, aws_iam_user.lb[*].arn])
+  value = zipmap([aws_iam_user.lb[*].name, aws_iam_user.lb[*].arn])
 }
 
 
