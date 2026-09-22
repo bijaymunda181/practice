@@ -4,7 +4,7 @@ resource "aws_iam_user" "lb" {
   path = "/system/"
 
   tags = {
-    tag-key = "user-${count.index+1}"
+    Name = "user-${count.index+1}"
   }
 }
 
