@@ -8,6 +8,7 @@ resource "aws_instance" "ec2" {
     key1 = "t3.micro"
     key2 = "t3.small"
   }
+  ami = "ami-081b0a6eac00b4f53"
   instance_type = each.value
   key_name = each.key
   tags = {
